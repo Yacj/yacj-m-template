@@ -1,88 +1,47 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
-
-<h6 align='center'>
-<a href="https://vitesse-lite.netlify.app/">Live Demo</a>
-</h6>
-
-<h5 align='center'>
-<b>Lightweight version of <a href="https://github.com/antfu/vitesse">Vitesse</a></b>
-</h5>
-
-<br>
-
-<p align='center'>
-<b>English</b> | <a href="https://github.com/antfu/vitesse-lite/blob/main/README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
-</p>
-
-## Features
-
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
-
-- 🗂 [File based routing](./src/pages)
-
-- 📦 [Components auto importing](./src/components)
-
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-- 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
-
-- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
-
-- 🦾 TypeScript, of course
-
-- ☁️ Deploy on Netlify, zero-config
-
-
-<br>
-
-See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
-
-
-## Dropped Features from [Vitesse](https://github.com/antfu/vitesse)
-
-- ~~i18n~~
-- ~~Layouts~~
-- ~~SSG~~
-- ~~PWA~~
-- ~~Markdown~~
-
-## Pre-packed
-
-### UI Frameworks
-
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-### Icons
-
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-### Plugins
-
-- [Vue Router](https://github.com/vuejs/vue-router)
-  - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [`unplugin-vue-macros`](https://github.com/sxzz/unplugin-vue-macros) - Explore and extend more macros and syntax sugar to Vue.
-- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-
-## Try it now!
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-lite/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
+# YACJ-M-Template 🔥
+-
+👋 欢迎使用 YACJ-M-Template，这是一个基于 Vite + Vue3 + Uno.css 开发的前端项目模板。在项目中，我们还使用了 postcss-px-to-viewport-8-plugin 插件，以便将 px 转换为 vw 单位，使得页面在不同设备上展示更加适配。
+## 功能特性 🚀
+- 基于 Vite 构建，开箱即用
+- 使用 Vue3 + Uno.css，提供良好的开发体验
+- 使用 postcss-px-to-viewport-8-plugin 插件，实现 vw 转换
+- 内置一些常用工具函数，提高开发效率
+## 快速开始 🎉
+1. 克隆项目代码到本地：
 
 ```bash
-npx degit antfu/vitesse-lite my-vitesse-app
-cd my-vitesse-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+
+git clone https://github.com/Yacj/yacj-m-template/blob/main/README.md
 ```
+
+
+1. 进入项目目录并安装依赖：
+
+```bash
+
+cd yacj-m-template
+pnpm install
+```
+
+
+1. 启动项目：
+
+```bash
+
+pnpm run dev
+```
+
+
+
+## 项目依赖 📦
+
+以下是项目主要依赖的版本信息：
+- vite
+- vue
+- unocss
+- postcss-px-to-viewport-8-plugin
+- @vueuse/core
+
+## License 📄
+
+本项目使用 MIT 许可证开源。欢迎任何人使用、修改、衍生本项目。
