@@ -1,5 +1,4 @@
 # YACJ-M-Template 🔥
--
 👋 欢迎使用 YACJ-M-Template，这是一个基于 Vite + Vue3 + Uno.css 开发的前端项目模板。在项目中，我们还使用了 postcss-px-to-viewport-8-plugin 插件，以便将 px 转换为 vw 单位，使得页面在不同设备上展示更加适配。
 ## 功能特性 🚀
 - 基于 Vite 构建，开箱即用
