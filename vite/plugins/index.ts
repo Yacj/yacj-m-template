@@ -1,4 +1,5 @@
 import path from 'node:path'
+import process from 'node:process'
 import Unocss from 'unocss/vite'
 import type { PluginOption } from 'vite'
 import Pages from 'vite-plugin-pages'
@@ -8,7 +9,7 @@ import visualizer from 'rollup-plugin-visualizer'
 import Vue from '@vitejs/plugin-vue'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
-export default function createVitePlugins(viteEnv: Object, isBuild = false) {
+export default function createVitePlugins(viteEnv:any, isBuild = false) {
   const vitePlugins: (PluginOption | PluginOption[])[] = [
     Vue(),
     // https://github.com/hannoeru/vite-plugin-pages
@@ -20,16 +21,16 @@ export default function createVitePlugins(viteEnv: Object, isBuild = false) {
         'vue-router',
         '@vueuse/core',
       ],
-      dts: true,
+      dts: './src/types/auto-imports.d.ts',
       dirs: [
-        './src/composables',
+        './src/utils/composables/**',
       ],
-      vueTemplate: true,
     }),
     // https://github.com/antfu/vite-plugin-components
     Components({
-      dts: true,
-      dirs: ['src/components'], // 配置需要默认导入的自定义组件文件夹，该文件夹下的所有组件都会自动 import
+      dts: './src/types/components.d.ts',
+      include: [/\.vue$/, /\.vue\?vue/, /\.tsx$/],
+      dirs: ['src/components'],
     }),
     // https://github.com/antfu/unocss
     Unocss(),
