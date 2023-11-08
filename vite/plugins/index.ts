@@ -9,7 +9,7 @@ import visualizer from 'rollup-plugin-visualizer'
 import Vue from '@vitejs/plugin-vue'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
-export default function createVitePlugins(viteEnv:any, isBuild = false) {
+export default function createVitePlugins(viteEnv: any, isBuild = false) {
   const vitePlugins: (PluginOption | PluginOption[])[] = [
     Vue(),
     // https://github.com/hannoeru/vite-plugin-pages
