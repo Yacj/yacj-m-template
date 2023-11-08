@@ -2,10 +2,9 @@
 </script>
 
 <template>
-  <div class="text-sm">
-    欢迎使用 template
-    <p>1111</p>
-  </div>
+  <van-button type="primary" size="small">
+    主要按钮
+  </van-button>
 </template>
 
 <style scoped>

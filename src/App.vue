@@ -1,3 +1,8 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <RouterView />
+  <van-config-provider>
+    <RouterView />
+  </van-config-provider>
 </template>

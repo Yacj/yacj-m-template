@@ -28,6 +28,7 @@
     "@unocss/eslint-config": "^0.57.2",
     "@unocss/preset-rem-to-px": "^0.57.2",
     "@unocss/reset": "^0.57.2",
+    "@vant/auto-import-resolver": "^1.0.2",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/test-utils": "^2.4.1",
     "autoprefixer": "^10.4.16",

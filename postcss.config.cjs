@@ -4,7 +4,7 @@ module.exports = {
       // 需要转换的单位，默认为"px"
       unitToConvert: 'px',
       // 设计稿的视口宽度
-      viewportWidth: 320,
+      viewportWidth: 375,
       // 单位转换后保留的精度
       unitPrecision: 5,
       // 能转化为 vw 的属性列表

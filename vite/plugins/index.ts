@@ -8,8 +8,9 @@ import AutoImport from 'unplugin-auto-import/vite'
 import visualizer from 'rollup-plugin-visualizer'
 import Vue from '@vitejs/plugin-vue'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import { VantResolver } from '@vant/auto-import-resolver'
 
-export default function createVitePlugins(viteEnv:any, isBuild = false) {
+export default function createVitePlugins(viteEnv: any, isBuild = false) {
   const vitePlugins: (PluginOption | PluginOption[])[] = [
     Vue(),
     // https://github.com/hannoeru/vite-plugin-pages
@@ -31,6 +32,7 @@ export default function createVitePlugins(viteEnv:any, isBuild = false) {
       dts: './src/types/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/, /\.tsx$/],
       dirs: ['src/components'],
+      resolvers: [VantResolver()],
     }),
     // https://github.com/antfu/unocss
     Unocss(),
